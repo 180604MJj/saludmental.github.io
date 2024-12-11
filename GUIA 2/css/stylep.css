@@ -1,0 +1,115 @@
+body {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+
+}
+
+header {
+    background:#faa279;
+    color: beige;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+section, article, aside {
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #007061;
+    border-radius: 5px;
+}
+
+footer {
+    background: coral;
+    color: beige;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Diseño responsive para diferentes tamaños de pantalla */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar nav ul {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        text-align: left;
+    }
+
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero-image img {
+        max-width: 80%;
+    }
+
+    .about-section .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .services-section .service-cards {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .articles {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .card,
+    .article {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 0.9em;
+    }
+
+    .hero-content h1 {
+        font-size: 2em;
+    }
+
+    .hero-content p {
+        font-size: 1em;
+    }
+
+    .navbar .logo img {
+        width: 60px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 0.9em;
+    }
+
+    .contact-form button {
+        font-size: 0.9em;
+    }
+}
